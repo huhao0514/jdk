@@ -46,7 +46,7 @@ public class CreateStreamDemo {
     }
 
     /**
-     * 使用Stream的静态方法：of()、iterate()、generate()
+     * 使用Stream的静态方法：of()、iterate()、generate();
      */
     public static Stream<Integer> demo3() {
         Stream<Integer> stream = Stream.of(1, 2, 3, 4);
