@@ -29,15 +29,15 @@ public class StreamForeachAndMatch {
         System.out.print(any.get());
         System.out.println("");
         //是否包含符合特定条件的元素
-        boolean b = list.stream().anyMatch(l -> l > 10); //false
+        boolean b = list.stream().anyMatch(l -> l > 10);//false
         System.out.println(b);
-        boolean b2 = list.stream().anyMatch(l -> l > 5); //false
+        boolean b2 = list.stream().anyMatch(l -> l > 5);//true
         System.out.println(b2);
         //stream中所有元素是否都匹配特定条件
-        boolean b3 = list.stream().allMatch(l -> l > 4); //false
+        boolean b3 = list.stream().allMatch(l -> l > 4);//false
         System.out.println(b3);
         //stream中所有元素都不匹配特定条件
-        boolean b4 = list.stream().noneMatch(l -> l > 10); //true
+        boolean b4 = list.stream().noneMatch(l -> l > 10);//true
         System.out.println(b4);
 
     }
