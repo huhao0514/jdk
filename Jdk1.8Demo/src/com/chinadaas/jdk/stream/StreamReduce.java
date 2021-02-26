@@ -39,13 +39,13 @@ public class StreamReduce {
 
         //求最大值方式2
         Optional<Integer> reduce2 = list.stream().reduce(Integer::max);
-        System.out.println("求最大值方式2" + reduce2.get());
+        System.out.println("求最大值方式2:" + reduce2.get());//11
 
         //求最大值方式3,若identity的数值超过了数组中元素的值，最大值为identity
         Integer reduce3 = list.stream().reduce(12, Integer::max); //12
         System.out.println(reduce3);
 
-        Integer reduce4 = list.stream().reduce(0, Integer::max); //12
+        Integer reduce4 = list.stream().reduce(0, Integer::max); //11
         System.out.println("求最大值方式3：" + reduce4);
 
         //求所有员工的工资之和和最高工资
